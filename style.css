@@ -13,7 +13,7 @@ body, html {
 }
 
 .white-text {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%) !important;
 }
 
 nav {
@@ -133,6 +133,25 @@ nav ul li {
   font-size: 32px;
 }
 
+.right {
+  float: right;
+  margin-right: 230px !important;
+  margin-top:80px !important;
+}
+
+#phones {
+  background: url(./images/bg-pattern-circles.svg) no-repeat bottom left, linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  height: 350px;
+  margin-top: 200px;
+  border-top-right-radius: 100px;
+}
+
+.img-left {
+  margin-left: 180px;
+  margin-top: -80px;
+  margin-right: 0px;
+}
+
 .subheading {
   color: hsl(268, 49%, 24%);
   font-size: 24px;
@@ -141,7 +160,7 @@ nav ul li {
 }
 
 .body-copy {
-  text-align: start;
+  text-align: left;
   max-width: 30vw;
   margin-left: 230px;
   font-size: 15px;
@@ -156,12 +175,46 @@ nav ul li {
   margin-right: -100px;
 }
 
-.editor {
-  
+.footer-links {
+  float: left;
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 250px;
 }
 
 footer {
   background-color: hsl(240, 10%, 16%);
+  height: 50vh;
+  margin: 0px;
+}
+
+footer img {
+  float: left;
+  margin-left: 230px;
+  margin-top: 80px;
+}
+
+footer ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.link-heading {
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Overpass';
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 .hero-wrapper {
