@@ -37,7 +37,7 @@ img {
 }
 
 .nav-container {
-  a, span {
+  a {
     color: hsl(0, 0%, 100%);
   }
 }
@@ -52,8 +52,13 @@ header {
     display: block;
   }
 
-  .hamburger {
+  #hamburger {
     cursor: pointer;
+  }
+
+  .icon-hamburger {
+    background: transparent;
+    border: 0;
   }
 
   #logo {
@@ -61,11 +66,77 @@ header {
     padding-left: 0.75em;
   }
 
-  .nav-ul {
+  nav {
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
     display: none;
-    width: 100%;
-    .show {
-      display: flex;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 150px;
+    width: 85%;
+    padding-bottom: 16px;
+
+    a {
+      display: block;
+      color: hsl(237, 17%, 21%);
+      text-align: center;
+      padding: 10px;
+      font-size: 17px;
+    }
+  }
+
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .dropdown-content {
+    float: none;
+    display: none;
+    z-index: 1;
+    a {
+      color: hsl(237, 17%, 21%);
+    }
+  }
+
+  .dropdown:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+
+  .dropdownbtn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 2em 4em;
+  }
+
+  .arrow-icon {
+    height: 10px;
+    padding-left: 10px;
+  }
+
+  #nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cta {
+      margin-top: 15px;
+      color: hsl(0, 0%, 100%);
+      background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+      cursor: pointer;
+      height: 40px;
+      padding: 10px 20px;
+      border-radius: 100px;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Ubuntu';
     }
   }
 

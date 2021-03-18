@@ -29,51 +29,49 @@
         <a href="index.html" id="logo">
           <img src="./images/logo.svg" alt="Blogr logo" id="logo" width="90">
         </a>
-  
-        <nav>
-          <img src="./images/icon-hamburger.svg" alt="Hamburger Menu Icon" id="hamburger" class="hamburger">
-          <ul id="nav-ul" class="nav-ul">
-            <li>
-              <div class="dropdown white-text">
-                <span class="nav-title">
-                  Product
-                  <img src="./images/icon-arrow-light.svg">
-                </span>
-                <div class="dropdown-content">
-                  <a href="#">Overview</a>
-                  <a href="#">Pricing</a>
-                  <a href="#">Marketplace</a>
-                  <a href="#">Features</a>
-                  <a href="#">Integrations</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dropdown white-text">
-                <span>Company</span>
-                <img src="./images/icon-arrow-light.svg">
-                <div class="dropdown-content">
-                  <a href="#">About</a>
-                  <a href="#">Team</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Careers</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dropdown white-text">
-                <span>Connect</span>
-                <img src="./images/icon-arrow-light.svg">
-                <div class="dropdown-content ">
-                  <a href="#">Contact</a>
-                  <a href="#">Newsletter</a>
-                  <a href="#">LinkedIn</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="nav-right nav-ul">
-            <span class="nav-right-item white-text">Login</span>
+        <button onclick="openMenu()" class="icon-hamburger" id="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
+        </button>
+        
+        <nav id="main" class="main">
+          <div class="dropdown">
+            <button class="dropdownbtn">
+              Product <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownbtn">
+              Company <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownbtn">
+              Connect <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="nav-right" id="nav-right">
+            <span class="nav-right-item">Login</span>
             <button class="cta">Sign Up</button>
           </div>
         </nav>

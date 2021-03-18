@@ -37,7 +37,7 @@ img {
   padding-top: 35px;
 }
 
-.nav-container a, .nav-container span {
+.nav-container a {
   color: white;
 }
 
@@ -58,8 +58,13 @@ header ul {
   display: block;
 }
 
-header .hamburger {
+header #hamburger {
   cursor: pointer;
+}
+
+header .icon-hamburger {
+  background: transparent;
+  border: 0;
 }
 
 header #logo {
@@ -67,15 +72,92 @@ header #logo {
   padding-left: 0.75em;
 }
 
-header .nav-ul {
+header nav {
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
   display: none;
-  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 150px;
+  width: 85%;
+  padding-bottom: 16px;
 }
 
-header .nav-ul .show {
+header nav a {
+  display: block;
+  color: #2c2d3f;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+header .dropdown {
+  overflow: hidden;
+}
+
+header .dropdown-content {
+  float: none;
+  display: none;
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: #2c2d3f;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdownbtn {
+  background: transparent;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  padding: 2em 4em;
+}
+
+header .arrow-icon {
+  height: 10px;
+  padding-left: 10px;
+}
+
+header #nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #nav-right .cta {
+  margin-top: 15px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(90deg, #ff8f70, #ff3d54);
+  cursor: pointer;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Ubuntu';
 }
 
 header .nav-title {
