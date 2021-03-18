@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Overpass', 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #4b5862;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.hero-nav-wrapper {
+  background: url(../images/bg-pattern-intro.svg) no-repeat left -60vw top -130px, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: url(../images/bg-pattern-intro.svg) no-repeat left -60vw top -130px, linear-gradient(#ff8f70, #ff3d54);
+  background-size: 135vh;
+  height: 70vh;
+  border-bottom-left-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 35px;
+}
+
+.nav-container a, .nav-container span {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul {
+  display: block;
+}
+
+header .hamburger {
+  cursor: pointer;
+}
+
+header #logo {
+  width: 90px;
+  padding-left: 0.75em;
+}
+
+header .nav-ul {
+  display: none;
+  width: 100%;
+}
+
+header .nav-ul .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 2em;
+}
+
+.hero .cta-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hero .cta-buttons .cta, .hero .cta-buttons .cta-secondary:hover {
+  color: #ff525d;
+  background-color: white;
+  cursor: pointer;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+}
+
+.hero .cta-buttons .cta:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.hero .cta-buttons .cta-secondary {
+  border: 1px solid white !important;
+  background: none;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+}
+
+.hero .hero-heading {
+  font-size: 34px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .hero-subheading {
+  margin: 0 auto 50px auto;
+  padding: 0 15px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.design-feature {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.heading, .subheading {
+  text-align: center;
+  color: #3b1f5b;
+  font-weight: 600;
+  font-family: 'Overpass';
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.subheading {
+  padding: 0 60px;
+  margin-bottom: 0px;
+  line-height: 2rem;
+}
+
+.body-copy {
+  text-align: center;
+  padding: 0 40px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.infrastructure-feature {
+  background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(85deg, #2c2d3f, #3f4164);
+  background-size: cover;
+  background-position: center bottom 30vh;
+  margin-top: 250px;
+  height: 75vh;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: white;
+}
+
+.infrastructure-feature .left {
+  margin-top: -180px;
+}
+
+.infrastructure-feature .heading {
+  color: white !important;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.infrastructure-feature .body-copy {
+  padding: 0 40px;
+}
+
+.free-feature {
+  margin-top: 100px;
+  padding: 0;
+}
+
+.free-feature .body-copy {
+  padding: 0 40px;
+}
+
+.free-feature .subheading {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #25252d;
+  border-top-right-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+
+footer .logo {
+  width: 100px;
+  margin: 80px auto 50px auto;
+}
+
+footer .link-heading {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: 300;
+  font-family: 'Overpass';
+}
+
+footer li {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+footer li a {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Ubuntu';
+}
+
+@media only screen and (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+  .design-feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+  }
+  .design-feature .body-copy {
+    text-align: left;
+    margin-right: 4em;
+  }
+  .design-feature .left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .design-feature .right {
+    margin-right: -7em;
+  }
+  .design-feature .subheading {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

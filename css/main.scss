@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Overpass', 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.hero-nav-wrapper {
+  background: url(../images/bg-pattern-intro.svg) no-repeat left -60vw top -130px, 
+              linear-gradient(hsl(13,100%,72%), hsl(353,100%,62%));
+  background-size: 135vh;
+  height: 70vh;
+  border-bottom-left-radius: 100px;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.nav-container {
+  a, span {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+
+  ul {
+    display: block;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  #logo {
+    width: 90px;
+    padding-left: 0.75em;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    .show {
+      display: flex;
+    }
+  }
+
+  .nav-title {
+    display: flex;
+  }
+}
+
+.hero {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  text-align: center;
+  padding: 2em;
+
+  .cta-buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    .cta, .cta-secondary:hover {
+      color: hsl(356, 100%, 66%);
+      background-color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      height: 40px;
+      padding: 0px 20px;
+      border-radius: 100px;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Ubuntu';
+    }
+
+    .cta:hover {
+      background-color: hsl(355, 100%, 74%);
+      color: hsl(0, 0%, 100%);
+    }
+
+    .cta-secondary {
+      border: 1px solid hsl(0, 0%, 100%) !important;
+      background: none;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      height: 40px;
+      padding: 0px 20px;
+      border-radius: 100px;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Ubuntu';
+    }
+  }
+
+  .hero-heading {
+    font-size: 34px;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .hero-subheading {
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.design-feature {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.heading, .subheading {
+  text-align: center;
+  color: hsl(268, 49%, 24%);
+  font-weight: 600;
+  font-family: 'Overpass';
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.subheading {
+  padding: 0 60px;
+  margin-bottom: 0px;
+  line-height: 2rem;
+}
+
+.body-copy {
+  text-align: center;
+  padding: 0 40px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.infrastructure-feature {
+  background: url(../images/bg-pattern-circles.svg) no-repeat,
+              linear-gradient(85deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-size: cover;
+  background-position: center bottom 30vh;
+  // background-position-y: center;
+  // background-position-x: center;
+  // background-size: 130vw;
+  margin-top: 250px;
+  height: 75vh;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: hsl(0, 0%, 100%);
+
+  .left {
+    margin-top: -180px;
+  }
+
+  .heading {
+    color: hsl(0, 0%, 100%) !important;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .body-copy {
+    padding: 0 40px;
+  }
+}
+
+.free-feature {
+  margin-top: 100px;
+  padding: 0;
+  
+  .body-copy {
+    padding: 0 40px;
+  }
+
+  .subheading {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+footer {
+  background: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 80px;
+
+  .logo {
+    width: 100px;
+    margin: 80px auto 50px auto;
+  }
+
+  .link-heading {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-weight: 300;
+    font-family: 'Overpass';
+  }
+
+  li {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+    a {
+      color: hsl(0, 0%, 100%);
+      font-weight: 400;
+      font-size: 18px;
+      font-family: 'Ubuntu';
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .design-feature {
+    display: grid;
+    grid-template-columns: 60% auto;
+
+    .body-copy {
+      text-align: left;
+      margin-right: 4em;
+    }
+
+    .left {
+      display: grid;
+      place-content: center;
+    }
+
+    .right {
+      margin-right: -7em;
+    }
+
+    .subheading {
+      text-align: left;
+    }
+  }
+}

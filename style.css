@@ -8,12 +8,10 @@ body, html {
   color: hsl(207, 13%, 34%);
 }
 
-.center {
-  text-align: center;
-}
-
-.white-text {
-  color: hsl(0, 0%, 100%) !important;
+.nav-container {
+  border-bottom-left-radius: 100px;
+  height: 80vh;
+  background: url(./images/bg-pattern-intro.svg) left center, linear-gradient(45deg, hsl(13,100%,72%), hsl(353,100%,62%));
 }
 
 nav {
@@ -27,7 +25,7 @@ nav {
 #logo {
   padding: 15px 30px;
   margin-left: 200px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 nav ul {
@@ -80,6 +78,14 @@ nav ul li {
   margin-right: 15px;
 }
 
+.center {
+  text-align: center;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%) !important;
+}
+
 .cta, .cta-secondary:hover {
   color: hsl(356, 100%, 66%);
   background-color: hsl(0, 0%, 100%);
@@ -118,9 +124,9 @@ nav ul li {
   margin-top: 15px;
 }
 
-.hero-content {
+/* .hero-content {
   margin-top: 20vh;
-}
+} */
 
 .cta-buttons {
   display: flex;
@@ -133,11 +139,11 @@ nav ul li {
   font-size: 32px;
 }
 
-.right {
+/* .right {
   float: right;
   margin-right: 230px !important;
   margin-top:80px !important;
-}
+} */
 
 #phones {
   background: url(./images/bg-pattern-circles.svg) no-repeat bottom left, linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -146,11 +152,11 @@ nav ul li {
   border-top-right-radius: 100px;
 }
 
-.img-left {
+/* .img-left {
   margin-left: 180px;
   margin-top: -80px;
   margin-right: 0px;
-}
+} */
 
 .subheading {
   color: hsl(268, 49%, 24%);
@@ -165,14 +171,6 @@ nav ul li {
   margin-left: 230px;
   font-size: 15px;
   margin-bottom: 30px;
-}
-
-.editor-img {
-  float: right;
-  height: 80vh;
-  width: auto;
-  margin-top: -100px;
-  margin-right: -100px;
 }
 
 .footer-links {
@@ -216,11 +214,3 @@ footer a:visited {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
 }
-
-.hero-wrapper {
-  border-bottom-left-radius: 100px;
-  display: inline-flexbox;
-  height: 80vh;
-  background: url(./images/bg-pattern-intro.svg) left center, linear-gradient(45deg, hsl(13,100%,72%), hsl(353,100%,62%));
-}
-
