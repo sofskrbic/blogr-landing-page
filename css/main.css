@@ -72,20 +72,29 @@ header #logo {
   padding-left: 0.75em;
 }
 
-header nav {
+header #main {
   overflow: hidden;
   background: white;
   border-radius: 10px;
   display: none;
-  position: absolute;
   text-align: center;
+  position: absolute;
+  left: 15px;
+  right: 0;
   z-index: 1;
   top: 150px;
-  width: 85%;
+  width: 95%;
   padding-bottom: 16px;
+  padding-top: 16px;
 }
 
-header nav a {
+header #main hr {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+header #main a {
   display: block;
   color: #2c2d3f;
   text-align: center;
@@ -93,22 +102,61 @@ header nav a {
   font-size: 17px;
 }
 
+header #main .cta-nav {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(90deg, #ff8f70, #ff3d54);
+  cursor: pointer;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+}
+
 header .dropdown {
-  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #2c2d3f;
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+header .dropdown .arrow-icon {
+  height: 10px;
+  padding-left: 10px;
 }
 
 header .dropdown-content {
-  float: none;
   display: none;
-  z-index: 1;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 header .dropdown-content a {
   color: #2c2d3f;
 }
 
-header .dropdown:hover .dropdown-content {
+header .dropdown-li:hover .dropdown-content {
   display: block;
+}
+
+header .dropdown-li:hover .arrow-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  height: 10px;
+  margin-left: 10px;
 }
 
 header .dropdownbtn {
@@ -122,11 +170,6 @@ header .dropdownbtn {
           align-items: center;
   font-size: 18px;
   padding: 2em 4em;
-}
-
-header .arrow-icon {
-  height: 10px;
-  padding-left: 10px;
 }
 
 header #nav-right {

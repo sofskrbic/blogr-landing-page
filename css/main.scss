@@ -66,17 +66,26 @@ header {
     padding-left: 0.75em;
   }
 
-  nav {
+  #main {
     overflow: hidden;
     background: hsl(0, 0%, 100%);
     border-radius: 10px;
     display: none;
-    position: absolute;
     text-align: center;
+    position: absolute;
+    left: 15px;
+    right: 0;
     z-index: 1;
     top: 150px;
-    width: 85%;
+    width: 95%;
     padding-bottom: 16px;
+    padding-top: 16px;
+
+    hr {
+      width: 80%;
+      margin: 0 auto;
+      opacity: 0.3;
+    }
 
     a {
       display: block;
@@ -85,24 +94,55 @@ header {
       padding: 10px;
       font-size: 17px;
     }
+
+    .cta-nav {
+      color: hsl(0, 0%, 100%);
+      background: linear-gradient(90deg, hsl(13,100%,72%), hsl(353,100%,62%));
+      cursor: pointer;
+      height: 40px;
+      padding: 0px 20px;
+      border-radius: 100px;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Ubuntu';
+    }
   }
 
   .dropdown {
-    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: hsl(237, 17%, 21%);
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    .arrow-icon {
+      height: 10px;
+      padding-left: 10px;
+    }
   }
 
   .dropdown-content {
-    float: none;
     display: none;
-    z-index: 1;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
     a {
       color: hsl(237, 17%, 21%);
     }
   }
 
-  .dropdown:hover {
+  .dropdown-li:hover {
     .dropdown-content {
       display: block;
+    }
+    .arrow-icon {
+      transform: rotate(180deg);
+      height: 10px;
+      margin-left: 10px;
     }
   }
 
@@ -113,11 +153,6 @@ header {
     align-items: center;
     font-size: 18px;
     padding: 2em 4em;
-  }
-
-  .arrow-icon {
-    height: 10px;
-    padding-left: 10px;
   }
 
   #nav-right {
