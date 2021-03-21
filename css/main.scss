@@ -6,6 +6,7 @@ body {
   font-family: 'Overpass', 'Ubuntu', sans-serif;
   font-size: 16px;
   color: hsl(207, 13%, 34%);
+  overflow-x: hidden;
 }
 
 ul {
@@ -299,16 +300,16 @@ header {
 }
 
 .free-feature {
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 0;
 
   .laptop {
-    content: url(../images/illustration-laptop-desktop.svg);
+    content: url(../images/illustration-laptop-mobile.svg);
     margin-top: 5em;
   }
 
   .inner {
-    margin-top: 15em;
+    margin-top: 5em;
   }
   
   .body-copy {
@@ -560,7 +561,7 @@ footer {
 
     .left {
       margin-left: -12em;
-      width: 110%;
+      width: 120%;
 
       .laptop {
         content: url(../images/illustration-laptop-desktop.svg);

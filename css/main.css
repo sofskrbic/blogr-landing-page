@@ -5,6 +5,7 @@ body {
   font-family: 'Overpass', 'Ubuntu', sans-serif;
   font-size: 16px;
   color: #4b5862;
+  overflow-x: hidden;
 }
 
 ul {
@@ -329,17 +330,17 @@ header #nav-right .cta {
 }
 
 .free-feature {
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 0;
 }
 
 .free-feature .laptop {
-  content: url(../images/illustration-laptop-desktop.svg);
+  content: url(../images/illustration-laptop-mobile.svg);
   margin-top: 5em;
 }
 
 .free-feature .inner {
-  margin-top: 15em;
+  margin-top: 5em;
 }
 
 .free-feature .body-copy {
@@ -594,7 +595,7 @@ footer li a {
   }
   .free-feature .left {
     margin-left: -12em;
-    width: 110%;
+    width: 120%;
   }
   .free-feature .left .laptop {
     content: url(../images/illustration-laptop-desktop.svg);
