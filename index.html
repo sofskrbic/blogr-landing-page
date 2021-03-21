@@ -34,10 +34,11 @@
           <img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger">
           
           <ul id="main" class="main">
-            <li class="dropdown-li">
+            <li class="dropdown-li left">
               <div class="dropdown">
                 Product
-                <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+                <img src="./images/icon-arrow-dark.svg" class="arrow-icon mobile">
+                <img src="./images/icon-arrow-light.svg" class="arrow-icon desktop">
               </div>
               <ul class="dropdown-content">
                 <li>
@@ -58,10 +59,11 @@
               </ul>
             </li>
 
-            <li class="dropdown-li">
+            <li class="dropdown-li left">
               <div class="dropdown">
                 Company
-                <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+                <img src="./images/icon-arrow-dark.svg" class="arrow-icon mobile">
+                <img src="./images/icon-arrow-light.svg" class="arrow-icon desktop">
               </div>
               <ul class="dropdown-content">
                 <li>
@@ -79,10 +81,11 @@
               </ul>
             </li>
 
-            <li class="dropdown-li">
+            <li class="dropdown-li left">
               <div class="dropdown">
                 Connect
-                <img src="./images/icon-arrow-dark.svg" class="arrow-icon">
+                <img src="./images/icon-arrow-dark.svg" class="arrow-icon mobile">
+                <img src="./images/icon-arrow-light.svg" class="arrow-icon desktop">
               </div>
               <ul class="dropdown-content">
                 <li>
@@ -97,12 +100,14 @@
               </ul>
             </li>
             <hr>
-            <li class="dropdown">
-              <a href="#">Login</a>
+            <div id="right">
+              <li class="dropdown-li">
+                <div class="dropdown">Login</div>
             </li>
             <li>
               <button class="cta-nav">Sign Up</button>
             </li>
+            </div>
           </ul>
         </nav>
       </header>
@@ -123,23 +128,21 @@
 
   <section class="design-feature">
     <h1 class="heading">Designed for the future</h1>
-    <div class="right">
-      <img src="./images/illustration-editor-mobile.svg" class="mobile">
-      <img src="./images/illustration-editor-desktop.svg" class="desktop">
-    </div>
-    <div class="left">
-      <div class="inner">
-        <h3 class="subheading">Introducing an extensible editor</h3>
-        <p class="body-copy">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-          change the looks of a blog.</p>
+    <div class="inner">
+      <div class="left">
+          <h3 class="subheading">Introducing an extensible editor</h3>
+          <p class="body-copy">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+        
+          <h3 class="subheading">Robust content management</h3>
+          <p class="body-copy">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
       </div>
-
-      <div class="inner">
-        <h3 class="subheading">Robust content management</h3>
-        <p class="body-copy">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      <div class="right">
+        <img src="./images/illustration-editor-mobile.svg" class="mobile">
+        <img src="./images/illustration-editor-desktop.svg" class="desktop">
       </div>
     </div>
   </section>
@@ -157,23 +160,20 @@
   </section>
 
   <section class="free-feature">
-    <img src="./images/illustration-laptop-mobile.svg" alt="Laptop illustration" class="mobile" class="right">
-    <img src="./images/illustration-laptop-desktop.svg" alt="Laptop illustration" class="desktop" class="right">
-    <div class="left">
+    <img src="./images/illustration-laptop-mobile.svg" alt="Laptop illustration" class="mobile left">
+    <img src="./images/illustration-laptop-desktop.svg" alt="Laptop illustration" class="desktop left">
+    <div class="right">
       <div class="inner">
         <h3 class="subheading">Free, open, simple</h3>
         <p class="body-copy">Blogr is a free and open source application backed by a large community of helpful developers. It supports
         features such as code syntax highlights, RSS feeds, social media integration, third-party commenting tools, 
         and works seamlesly with Google Analytics. The architecture is clean and is relatively easy to learn.
         </p>
-      </div>
-      <div class="inner">
         <h3 class="subheading">Powerful tooling</h3>
         <p class="body-copy">
           Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
           a breeze, but capable of producing even the most complicated sites.
         </p>
-      </div>
     </div>
   </section>
 
@@ -182,23 +182,25 @@
     <div class="footer-links">
       <ul>
         <li class="link-heading"><b>Product</b></li>
-        <li>
-          <a href="#">Overview</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-        <li>
-          <a href="#">Marketplace</a>
-        </li>
-        <li>
-          <a href="#">Features</a>
-        </li>
-        <li>
-          <a href="#">Integrations</a>
-        </li>
-    
-     
+        <ul>
+          <li>
+            <a href="#">Overview</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Marketplace</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Integrations</a>
+          </li>
+        </ul>
+      </ul>
+      <ul>
         <li class="link-heading"><b>Company</b></li>
         <li>
           <a href="#">About</a>
@@ -212,7 +214,9 @@
         <li>
           <a href="#">Careers</a>
         </li>
-    
+      </ul>
+        
+    <ul>
         <li class="link-heading"><b>Connect</b></li>
         <li>
           <a href="#">Contact</a>

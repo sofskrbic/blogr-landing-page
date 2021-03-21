@@ -203,12 +203,6 @@ header #nav-right .cta {
   font-family: 'Ubuntu';
 }
 
-header .nav-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .hero {
   color: white;
   display: -webkit-box;
@@ -386,29 +380,236 @@ footer li a {
 }
 
 @media only screen and (min-width: 1440px) {
+  .desktop {
+    display: unset;
+  }
   .mobile {
     display: none;
   }
+  #logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .hero-nav-wrapper {
+    background: url(../images/bg-pattern-intro.svg) no-repeat left 30% center, linear-gradient(60deg, #ff8f70, #ff3d54);
+    height: 70vh;
+    border-bottom-left-radius: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.2em 7em 0 7em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header #hamburger {
+    display: none;
+  }
+  header .nav-container {
+    padding: 0 7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  hr {
+    display: none;
+  }
+  nav {
+    position: relative;
+    width: 95%;
+    margin-left: 4em;
+  }
+  nav #main {
+    background: unset;
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav #main #right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  nav #main #right .cta-nav {
+    color: #ff3d54;
+    background: white;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+  }
+  nav #main #right .cta-nav:hover {
+    background-color: #ff7a85;
+    color: white;
+  }
+  nav .dropdown {
+    color: white;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-right: 2.5em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav .dropdown .arrow-icon {
+    padding-left: 5px;
+  }
+  nav .dropdown-content {
+    position: absolute;
+    display: none;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1em;
+    font-weight: 600;
+    z-index: 1;
+  }
+  nav .dropdown-li:hover .arrow-icon {
+    margin-left: 5px;
+  }
+  .hero {
+    padding: 5em 5em 5em 8em;
+    place-content: center;
+  }
+  .hero .hero-heading {
+    font-size: 48px;
+  }
+  .hero .hero-subheading {
+    font-size: 20px;
+  }
+  .hero .cta-buttons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 7em;
+  }
   .design-feature {
+    overflow: hidden;
+  }
+  .design-feature .heading {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    padding-left: 1em;
+  }
+  .design-feature .inner {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
-  }
-  .design-feature .body-copy {
-    text-align: left;
-    margin-right: 4em;
-  }
-  .design-feature .left {
-    display: -ms-grid;
-    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
     place-content: center;
   }
   .design-feature .right {
-    margin-right: -7em;
+    padding-left: 10em;
+    margin-top: -100px;
+    width: 100%;
   }
-  .design-feature .subheading {
-    text-align: left;
+  .design-feature .left {
+    padding-left: 10em;
+    place-content: center;
+  }
+  .design-feature .left .subheading, .design-feature .left .body-copy {
+    padding: unset;
+    text-align: start;
+  }
+  .design-feature .left .subheading {
+    padding: 0em 4em 0 2em;
+  }
+  .design-feature .left .body-copy {
+    padding: 0em 4em 0 3.5em;
+  }
+  .infrastructure-feature {
+    background: url(../images/bg-pattern-circles.svg) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+    background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(#2c2d3f, #3f4164);
+    background-position: bottom right 40vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
+    place-content: center;
+    height: 50vh;
+    margin-top: 80px;
+  }
+  .infrastructure-feature .left {
+    width: 90%;
+    padding-left: 5em;
+    margin-top: 20px;
+  }
+  .infrastructure-feature .right .heading {
+    padding-right: 2em;
+    padding-top: 8.5em;
+  }
+  .infrastructure-feature .right .body-copy {
+    text-align: start;
+    width: 80%;
+  }
+  .free-feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
+    margin-top: 7em;
+  }
+  .free-feature .left {
+    margin-left: -12em;
+    width: 110%;
+  }
+  .free-feature .right {
+    padding-left: 2em;
+    padding-right: 8em;
+    padding-top: 6em;
+    place-content: center;
+  }
+  .free-feature .right .subheading, .free-feature .right .body-copy {
+    text-align: start;
+    padding: unset;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% auto;
+        grid-template-columns: 25% auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 10em;
+  }
+  footer .logo {
+    margin: unset;
+    padding-left: 10em;
+    padding-top: 4em;
+  }
+  footer .footer-links {
+    padding-top: 1.5em;
+    padding-left: 5em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  footer .footer-links li, footer .footer-links a {
+    text-align: start;
   }
 }
 /*# sourceMappingURL=main.css.map */
