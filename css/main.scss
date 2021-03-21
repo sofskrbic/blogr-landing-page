@@ -121,6 +121,7 @@ header {
     .arrow-icon {
       height: 10px;
       padding-left: 10px;
+      content: url(../images/icon-arrow-dark.svg);
     }
   }
 
@@ -143,6 +144,7 @@ header {
       transform: rotate(180deg);
       height: 10px;
       margin-left: 10px;
+      content: url(../images/icon-arrow-dark.svg);
     }
   }
 
@@ -241,6 +243,10 @@ header {
 .design-feature {
   margin-top: 100px;
   margin-bottom: 100px;
+
+  .editor {
+    content: url(../images/illustration-editor-mobile.svg);
+  }
 }
 
 .heading, .subheading {
@@ -295,13 +301,21 @@ header {
 .free-feature {
   margin-top: 100px;
   padding: 0;
+
+  .laptop {
+    content: url(../images/illustration-laptop-desktop.svg);
+    margin-top: 5em;
+  }
+
+  .inner {
+    margin-top: 15em;
+  }
   
   .body-copy {
     padding: 0 40px;
   }
 
   .subheading {
-    margin-top: 35px;
     margin-bottom: 25px;
   }
 }
@@ -427,6 +441,7 @@ footer {
 
       .arrow-icon {
         padding-left: 5px;
+        content: url(../images//icon-arrow-light.svg);
       }
     }
 
@@ -443,6 +458,7 @@ footer {
     .dropdown-li:hover {
       .arrow-icon {
         margin-left: 5px;
+        content: url(../images//icon-arrow-light.svg);
       }
     }
   }
@@ -467,6 +483,11 @@ footer {
 
   .design-feature {
     overflow: hidden;
+
+    .editor {
+      content: url(../images/illustration-editor-desktop.svg);
+    }
+
     .heading {
       font-size: 36px;
       width: 100%;
@@ -520,11 +541,13 @@ footer {
 
     .right {
       .heading {
-        padding-right: 2em;
-        padding-top: 8.5em;
+        text-align: start;
+        padding-left: 1em;
+        padding-top: 11.5em;
       }
       .body-copy {
         text-align: start;
+        padding-right: 5em;
         width: 80%;
       }
     }
@@ -538,6 +561,10 @@ footer {
     .left {
       margin-left: -12em;
       width: 110%;
+
+      .laptop {
+        content: url(../images/illustration-laptop-desktop.svg);
+      }
     }
 
     .right {
