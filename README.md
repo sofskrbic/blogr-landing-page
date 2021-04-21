@@ -47,6 +47,6 @@ The future of this project would consist of including the animation of its conta
 
 ## Author
 
-- LinkedIn - [@sofskrbic](https://www.linkedin.com/in/sofskrbic)
+- LinkedIn - [@sofskrbic](https://www.linkedin.com/in/sofijaskrbic/)
 - Instagram - [@abovetheux](https://www.instagram.com/abovetheux)
 - Twitter - [@sofskrbic](https://www.twitter.com/sofskrbic)
